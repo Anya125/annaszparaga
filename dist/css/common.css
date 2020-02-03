@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Source+Sans+Pro:300,400&display=swap");
+.home-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-section h1 {
+  margin: 0;
+}
+
+.home-img {
+  width: 90%;
+  margin-top: 1.5rem;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid #0b5d40;
+  margin: 0.2rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #464546;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
+.page-container {
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+}
+
+/* -------------------- Hamburger animation END -------------------- */
+.is-active {
+  display: block;
+}
+
+.collapsed {
+  display: none;
+}
+
+/* -------------------- Hamburger animation END -------------------- */
+/* -------------------- HEADER styling START -------------------- */
+.menu-nav {
+  background-image: url("/img/gradient.jpg");
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: absolute;
+  z-index: 999;
+}
+
+.menu-nav a {
+  color: #fff;
+  display: block;
+}
+
+.menu-nav li {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* -------------------- HEADER styling END -------------------- */
+/* -------------------- FOOTER styling START -------------------- */
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer-container a {
+  color: #dedfe0;
+}
+
+.footer-container a:hover {
+  color: #60a04c;
+}
+
+.footer1 {
+  background-color: #094f37;
+  padding: .75rem;
+  color: #dedfe0;
+}
+
+.footer2 {
+  background-color: #0d6b49;
+  padding: .75rem;
+  color: #dedfe0;
+}
+
+/* -------------------- FOOTER styling END -------------------- */
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Source+Sans+Pro:300,400&display=swap");
+@import "./variables";
+@import "./mixins";
+@import "./home";
+@import "./aboutMe";
+@import "./projects";
+@import "./cv";
+@import "./contact";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
+.page-container {
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+}
+
+/* -------------------- Hamburger animation END -------------------- */
+.is-active {
+  display: block;
+}
+
+.collapsed {
+  display: none;
+}
+
+/* -------------------- Hamburger animation END -------------------- */
+
+/* -------------------- HEADER styling START -------------------- */
+.menu-nav {
+  background-image: url("/img/gradient.jpg");
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: absolute;
+  z-index: 999;
+
+  a {
+    color: #fff;
+    display: block;
+  }
+
+  li {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+
+/* -------------------- HEADER styling END -------------------- */
+
+
+/* -------------------- FOOTER styling START -------------------- */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  a {
+    color: $light-grey;
+  }
+
+  a:hover {
+    color: $secondary;
+  }
+}
+
+.footer1 {
+  background-color: darken($primary, 3%);
+  padding: .75rem;
+  color: $light-grey;
+}
+
+.footer2 {
+  background-color: lighten($primary, 3%);
+  padding: .75rem;
+  color: $light-grey;
+}
+
+/* -------------------- FOOTER styling END -------------------- */
