@@ -10,6 +10,21 @@ hamburger.addEventListener("click", function () {
 });
 
 
-function addBGimg() {
-  document.getElementById("greenBGheader").style.backgroundImage = "url('img/gradient.jpg')";
-}
+// function addBGimg() {
+//   document.getElementById("newHeaderBG").style.backgroundImage = "url('img/gradient.jpg')";
+// }
+
+
+var button = document.querySelector("#newHeaderBG");
+
+button.addEventListener("click", function () {
+  const curImage = document.getElementById("newHeaderBG").style.backgroundImage;
+
+  console.log(curImage);
+
+  if (curImage === 'url("img/gradient.jpg")') {
+    document.getElementById("newHeaderBG").style.backgroundImage = "";
+  } else {
+    document.getElementById("newHeaderBG").style.backgroundImage = 'url("img/gradient.jpg")';
+  }
+});
