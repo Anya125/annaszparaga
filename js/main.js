@@ -8,3 +8,8 @@ hamburger.addEventListener("click", function () {
   menu.classList.toggle("collapsed");
   // Do something else, like open/close menu
 });
+
+
+function addBGimg() {
+  document.getElementById("greenBGheader").style.backgroundImage = "url('img/gradient.jpg')";
+}

@@ -68,18 +68,30 @@ button:active {
   height: calc(100vh - 60px);
   position: absolute;
   z-index: 999;
-
-  a {
-    color: #fff;
-    display: block;
-  }
+  text-transform: uppercase;
 
   li {
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
+
+    a {
+      color: #fff;
+      display: block;
+    }
+
+    a.active {
+      border-bottom: 2px solid;
+    }
+
+    a:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
   }
 }
+
+
 
 
 /* -------------------- HEADER styling END -------------------- */

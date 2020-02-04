@@ -90,17 +90,30 @@ button:active {
   height: calc(100vh - 60px);
   position: absolute;
   z-index: 999;
-}
-
-.menu-nav a {
-  color: #fff;
-  display: block;
+  text-transform: uppercase;
 }
 
 .menu-nav li {
   font-size: 2rem;
   padding: 1rem;
   text-align: center;
+}
+
+.menu-nav li a {
+  color: #fff;
+  display: block;
+}
+
+.menu-nav li a.active {
+  border-bottom: 2px solid;
+}
+
+.menu-nav li a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.whiteBG {
+  background-color: #fff;
 }
 
 /* -------------------- HEADER styling END -------------------- */
