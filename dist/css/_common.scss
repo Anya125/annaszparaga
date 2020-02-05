@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+p,
+a {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: $dark-grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    outline: none;
+}
+
+button:active {
+    outline: none;
+}
+
+.page-container {
+    max-width: 1440px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}

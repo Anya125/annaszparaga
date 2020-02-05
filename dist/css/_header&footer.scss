@@ -1,55 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Source+Sans+Pro:300,400&display=swap");
-@import "./variables";
-@import "./mixins";
-@import "./home";
-@import "./aboutMe";
-@import "./projects";
-@import "./cv";
-@import "./contact";
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-}
-
-p,
-a {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  text-decoration: none;
-  color: $dark-grey;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  outline: none;
-}
-
-button:active {
-  outline: none;
-}
-
-.page-container {
-  max-width: 1440px;
-  height: 100%;
-  width: 100%;
-}
-
 /* -------------------- Hamburger animation END -------------------- */
 .is-active {
   display: block;
@@ -62,8 +10,14 @@ button:active {
 /* -------------------- Hamburger animation END -------------------- */
 
 /* -------------------- HEADER styling START -------------------- */
-.menu-nav {
+
+.greenBG-menu {
   background-image: url("/img/gradient.jpg");
+}
+
+
+
+.menu-nav {
   width: 100%;
   height: calc(100vh - 60px);
   position: absolute;
@@ -87,15 +41,16 @@ button:active {
     a:hover {
       background: rgba(0, 0, 0, 0.1);
     }
-
   }
 }
 
-
-
+@include media-max-768 {
+  .menu-nav {
+    background-image: url("/img/gradient.jpg");
+  }
+}
 
 /* -------------------- HEADER styling END -------------------- */
-
 
 /* -------------------- FOOTER styling START -------------------- */
 
@@ -103,10 +58,8 @@ button:active {
   display: flex;
   flex-direction: column;
   text-align: center;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  left: 0;
-  right: 0;
   bottom: 0;
 
   a {
@@ -120,14 +73,61 @@ button:active {
 
 .footer1 {
   background-color: darken($primary, 3%);
-  padding: .75rem;
+  padding: 0.75rem;
   color: $light-grey;
 }
 
 .footer2 {
   background-color: lighten($primary, 3%);
-  padding: .75rem;
+  padding: 0.75rem;
   color: $light-grey;
 }
 
 /* -------------------- FOOTER styling END -------------------- */
+
+/* -------------------- MEDIA QUERY styling START -------------------- */
+
+@include media-md-768 {
+  .menu-nav {
+    padding-top: 3rem;
+  }
+
+  .home-img {
+    margin-top: 3rem;
+  }
+}
+
+@include media-lg-1024 {
+  .hiddenBurger {
+    display: none;
+  }
+
+  .collapsed {
+    display: block;
+  }
+
+  .nav {
+    height: 60px;
+    position: relative;
+  }
+
+  .menu-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0;
+
+    li {
+      font-size: 1.2rem;
+    }
+
+    a:hover {
+      background: rgba(0, 0, 0, 0.1);
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+  }
+}

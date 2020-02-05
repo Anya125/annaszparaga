@@ -1,6 +1,30 @@
 @mixin flexCenterColumn() {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+
+@mixin media-max-768 {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-md-768 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg-1024 {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl-1600 {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
 }

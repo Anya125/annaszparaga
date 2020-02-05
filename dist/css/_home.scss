@@ -1,7 +1,5 @@
 .home-section {
-  display: flex;
-  align-items: center; // align-items a nie justisy content bo jest flex-direction:column i sie odwraca wszystko
-  flex-direction: column;
+  @include flexCenterColumn;
 
   h1 {
     margin: 0;
@@ -18,4 +16,23 @@ hr {
   width: 100%;
   border-top: 1px solid $primary;
   margin: 0.2rem;
+}
+
+@include media-md-768 {}
+
+@include media-lg-1024 {
+  main {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-section {
+    padding-top: 2rem;
+    width: 100%;
+
+    .home-img {
+      width: 55%;
+    }
+  }
 }
