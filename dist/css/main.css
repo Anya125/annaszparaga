@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+body,
+html {
+  height: 100%;
+}
+
+body {
+  padding-bottom: 125px;
+}
+
 h1,
 h2,
 h3,
@@ -16,7 +25,8 @@ h5 {
 }
 
 p,
-a {
+a,
+li {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   text-decoration: none;
@@ -37,13 +47,6 @@ button:active {
   outline: none;
 }
 
-.page-container {
-  max-width: 1440px;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-}
-
 /* -------------------- Hamburger animation END -------------------- */
 .is-active {
   display: block;
@@ -57,6 +60,13 @@ button:active {
 /* -------------------- HEADER styling START -------------------- */
 .greenBG-menu {
   background-image: url("/img/gradient.jpg");
+}
+
+.nav-container {
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
 .menu-nav {
@@ -103,9 +113,10 @@ button:active {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
+  left: 0;
 }
 
 .footer-container a {
@@ -175,6 +186,13 @@ button:active {
   }
 }
 
+.home-container {
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+  margin: auto 0;
+}
+
 .home-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,10 +204,11 @@ button:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 1rem;
 }
 
 .home-section h1 {
-  margin: 0;
+  font-size: 1.5rem;
 }
 
 .home-img {
@@ -205,9 +224,17 @@ hr {
   margin: 0.2rem;
 }
 
+@media screen and (min-width: 350px) {
+  .home-section {
+    padding-top: 2rem;
+  }
+  .home-section .home-img {
+    margin-top: 2rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   main {
-    padding-top: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -220,7 +247,101 @@ hr {
     width: 100%;
   }
   .home-section .home-img {
-    width: 55%;
+    width: 58%;
   }
+}
+
+@media screen and (min-width: 1600px) {
+  .home-section {
+    padding-top: 2rem;
+    width: 100%;
+  }
+  .home-section h1 {
+    font-size: 2.2rem;
+  }
+  .home-section h3 {
+    font-size: 1.5rem;
+  }
+  .home-section .home-img {
+    width: 62%;
+  }
+}
+
+.aboutme-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
+}
+
+.aboutme-section h3 {
+  color: #0b5d40;
+  font-weight: bold;
+}
+
+.aboutme-section p {
+  padding-top: 1rem;
+  text-align: justify;
+  line-height: 1.6rem;
+}
+
+.aboutme-section a:hover {
+  text-decoration: underline;
+}
+
+.aboutme-section .lightgreen {
+  color: #60a04c;
+}
+
+.aboutmeCV-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: justify;
+  padding: 1.5rem;
+  background-color: #f3f3f3;
+  padding-bottom: 10rem;
+}
+
+.aboutmeCV-section h3,
+.aboutmeCV-section h4,
+.aboutmeCV-section h5,
+.aboutmeCV-section p,
+.aboutmeCV-section li {
+  line-height: 1.6rem;
+  color: #464546;
+}
+
+.aboutmeCV-section h3 {
+  padding-top: 1.5rem;
+  color: #60a04c;
+}
+
+.aboutmeCV-section h5 {
+  text-transform: uppercase;
+}
+
+.aboutmeCV-section p {
+  padding-top: 1rem;
+}
+
+.aboutmeCV-section ul {
+  list-style-image: url("/img/monstera-leaf.png");
+  padding-left: 1.5rem;
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

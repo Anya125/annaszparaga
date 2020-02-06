@@ -1,8 +1,17 @@
+.home-container {
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+  margin: auto 0;
+
+}
+
 .home-section {
   @include flexCenterColumn;
+  padding-top: 1rem;
 
   h1 {
-    margin: 0;
+    font-size: 1.5rem;
   }
 }
 
@@ -18,11 +27,18 @@ hr {
   margin: 0.2rem;
 }
 
-@include media-md-768 {}
+@include media-IPHONE678 {
+  .home-section {
+    padding-top: 2rem;
+
+    .home-img {
+      margin-top: 2rem;
+    }
+  }
+}
 
 @include media-lg-1024 {
   main {
-    padding-top: 60px;
     display: flex;
     justify-content: center;
   }
@@ -32,7 +48,26 @@ hr {
     width: 100%;
 
     .home-img {
-      width: 55%;
+      width: 58%;
+    }
+  }
+}
+
+@include media-xl-1600 {
+  .home-section {
+    padding-top: 2rem;
+    width: 100%;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .home-img {
+      width: 62%;
     }
   }
 }

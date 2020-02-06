@@ -1,0 +1,63 @@
+.aboutme-section {
+    @include flexCenterColumn;
+    padding: 1.5rem;
+
+    h3 {
+        color: $primary;
+        font-weight: bold;
+    }
+
+    p {
+        padding-top: 1rem;
+        text-align: justify;
+        line-height: 1.6rem;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .lightgreen {
+        color: $secondary;
+    }
+}
+
+.aboutmeCV-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    padding: 1.5rem;
+    background-color: #f3f3f3;
+    padding-bottom: 10rem;
+
+    h3,
+    h4,
+    h5,
+    p,
+    li {
+        line-height: 1.6rem;
+        color: $dark-grey;
+    }
+
+    h3 {
+        padding-top: 1.5rem;
+        color: $secondary;
+    }
+
+    h5 {
+        text-transform: uppercase;
+    }
+
+    p {
+        padding-top: 1rem;
+    }
+
+    ul {
+        list-style-image: url("/img/monstera-leaf.png");
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    li {}
+}

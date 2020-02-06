@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+@mixin media-IPHONE678 {
+  @media screen and (min-width:350px) {
+    @content
+  }
+}
 
 @mixin media-max-768 {
   @media screen and (max-width: 768px) {

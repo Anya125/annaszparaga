@@ -13,105 +13,121 @@
   <link rel="apple-touch-icon" href="icon.png" />
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="dist/css/hamburger.css" />
-  <link rel="stylesheet" href="dist/css/normalize.css" />
   <link rel="stylesheet" href="dist/css/main.css" />
-  <link rel="stylesheet" href="dist/css/common.css" />
-
-  <meta name="theme-color" content="#fafafa" />
 </head>
 
 <body>
-  <section class="page-container">
-    <!--[if IE]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
+  <header>
+    <div id="newHeaderBG" class="hiddenBurger">
+      <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <div class="greenBG-menu">
+      <section class="nav-container">
+        <nav class="nav">
+          <ul class="menu-nav collapsed">
+            <li class="menu-nav-item">
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="about-me.html" class="active">About me</a>
+            </li>
+            <li>
+              <a href="projects.html">Latest projects</a>
+            </li>
+            <li>
+              <a href="cv.html">CV & references</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </header>
 
-    <header>
-      <div class="btn-nav">
-        <button class="hamburger hamburger--collapse" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      </div>
-
-      <nav class="nav">
-        <ul class="menu-nav collapsed">
-          <li class="menu-nav-item">
-            <a href="home.html">Home</a>
-          </li>
-          <li>
-            <a href="about-me.html" class="active">About me</a>
-          </li>
-          <li>
-            <a href="projects.html">Latest projects</a>
-          </li>
-          <li>
-            <a href="cv.html">CV & references</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+  <section class="home-container">
     <main>
-      <section class="home-section">
-        <h1>
-          ABOUT ME
-        </h1>
+      <section class="aboutme-section">
+        <h3> Welcome Stranger! </h3>
+        <p>Thank you for visiting my website. My name is <span class="lightgreen"> Anna Szparaga </span> and I am
+          currently
+          looking for a job as a junior <span class="lightgreen">Frontend Developer</span>.</p>
+
+        <p>6 years ago I turned my life upside-down and moved to Sweden. Now I am doing this again. After a couple of
+          years working in customer service I decided that it is time for a change.</p>
+
+        <p>I have always been this person who helped colleagues with their computers and I thought why not make that for
+          a living? So I took a brake to learn a few frontend technologies. Right now I am ready for new challenges in
+          the IT world.</p>
+
+        <p>Feel free to check out my <a href="projects.html">projects</a> and if you like what you see just <a
+            href="contact.html">get in
+            touch with me</a>!
+        </p>
+      </section>
+
+      <section class="aboutmeCV-section">
+        <h3>April 2019 - November 2019</h3>
+        <h4>Monster Dream</h4>
+        <h5>Frontend developer - Internship</h5>
+        <p>At MonsterDream I was creating user-friendly and responsive webpages. I was mostly working in HTML, CSS,
+          Bootstrap and JavaScript.</p>
+
+        <h3>August 2015 - November 2018</h3>
+        <h4>Cyklos AB</h4>
+        <h5>ADMINISTRATION/PROJECT MANAGER</h5>
+        <ul class="leaf">
+          <li>Managing product development process.</li>
+          <li>Administration of purchase and delivery.</li>
+          <li>Building relation with existing subcontractors and production.</li>
+          <li>Establishing cooperation with new suppliers in China and Poland.</li>
+          <li>Creating tools that organized data in: ongoing and planned
+            purchases, orders in production, deliveries, inventory, pricing.</li>
+          <li>BTB sales as well as responding to customer complaints.</li>
+          <li>Other administrative tasks that created efficiency and good work flow</li>
+        </ul>
+        <h3>November 2013 - August 2015</h3>
+        <h4>Berns Hotel, Restaurang Assistans, ASJ Hemservice</h4>
+        <h5>Housekeeping</h5>
+        <p>During first 2 years after moving to Sweden I was working as a housekeeper in the above mentioned
+          companies.
+          My job at that time was to make sure that our clients came back to a clean and fresh home or hotel room.</p>
+
+        <h3>June 2012 - October 2013</h3>
+        <h4>Villeroy&Boch</h4>
+        <h5>Store manager</h5>
+        <ul class="leaf">
+          <li>Maintain staff by recruting and training employees.</li>
+          <li>Ensuring availability of merchandise while managin stock levels.</li>
+          <li>Implementing marketing, advertising and
+            financial strategy.</li>
+          <li>Ensuring that the store met its financial quotes.</li>
+        </ul>
+
 
       </section>
     </main>
-
-    <footer class="footer-container">
-      <div class="footer1">
-        <h3>Do you like my work?</h3>
-        <h3> Contact me on
-
-          <a href="https://www.linkedin.com/in/anna-szparaga/">Linkedin</a>
-
-        </h3>
-      </div>
-      <div class="footer2">
-        <h4>© 2020 Anna Szparaga</h4>
-      </div>
-    </footer>
-
   </section>
 
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery ||
-      document.write(
-        '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
-      );
+  <footer class="footer-container">
+    <div class="footer1">
+      <h3>Do you like my work?</h3>
+      <h3>
+        Contact me on
+        <a href="https://www.linkedin.com/in/anna-szparaga/">Linkedin</a>
+      </h3>
+    </div>
+    <div class="footer2">
+      <h4>© 2020 Anna Szparaga</h4>
+    </div>
+  </footer>
 
-  </script>
-  <script src="js/plugins.js"></script>
-  <script src="https://kit.fontawesome.com/f98c3deb06.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () {
-      ga.q.push(arguments);
-    };
-    ga.q = [];
-    ga.l = +new Date();
-    ga("create", "UA-XXXXX-Y", "auto");
-    ga("set", "transport", "beacon");
-    ga("send", "pageview");
-
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

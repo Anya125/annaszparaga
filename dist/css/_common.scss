@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+body,
+html {
+    height: 100%;
+}
+
+body {
+    padding-bottom: 125px;
+}
+
 h1,
 h2,
 h3,
@@ -14,7 +23,8 @@ h5 {
 }
 
 p,
-a {
+a,
+li {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     text-decoration: none;
@@ -33,11 +43,4 @@ button {
 
 button:active {
     outline: none;
-}
-
-.page-container {
-    max-width: 1440px;
-    height: 100%;
-    width: 100%;
-    margin: auto;
 }
