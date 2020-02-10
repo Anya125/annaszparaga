@@ -6,13 +6,8 @@
   padding: 0;
 }
 
-body,
-html {
-  height: 100%;
-}
-
 body {
-  padding-bottom: 125px;
+  padding-bottom: 8rem;
 }
 
 h1,
@@ -191,6 +186,7 @@ button:active {
   height: 100%;
   width: 100%;
   margin: auto 0;
+  padding: 0 2rem;
 }
 
 .home-section {
@@ -212,8 +208,8 @@ button:active {
 }
 
 .home-img {
-  width: 90%;
-  margin-top: 1.5rem;
+  width: 100%;
+  margin: 1.5rem 0;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -224,24 +220,67 @@ hr {
   margin: 0.2rem;
 }
 
+.aboutme-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutme-section h3 {
+  color: #0b5d40;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.aboutme-section p {
+  padding-top: 1rem;
+  text-align: justify;
+  line-height: 1.6rem;
+}
+
+.aboutme-section a {
+  text-decoration: underline;
+}
+
+.aboutme-section a a:hover {
+  color: #60a04c;
+}
+
+.aboutme-section .lightgreen {
+  color: #60a04c;
+}
+
 @media screen and (min-width: 350px) {
+  .home-img {
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-container h1 {
+    font-size: 2.2rem;
+  }
+  .home-container h3 {
+    font-size: 1.5rem;
+  }
+  .home-container .lightgreen {
+    font-size: 1.1rem;
+  }
   .home-section {
     padding-top: 2rem;
   }
-  .home-section .home-img {
-    margin-top: 2rem;
+  .aboutme-section {
+    padding: 2rem 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .home-section {
     padding-top: 2rem;
     width: 100%;
@@ -256,51 +295,12 @@ hr {
     padding-top: 2rem;
     width: 100%;
   }
-  .home-section h1 {
-    font-size: 2.2rem;
-  }
-  .home-section h3 {
-    font-size: 1.5rem;
-  }
   .home-section .home-img {
     width: 62%;
   }
 }
 
-.aboutme-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1.5rem;
-}
-
-.aboutme-section h3 {
-  color: #0b5d40;
-  font-weight: bold;
-}
-
-.aboutme-section p {
-  padding-top: 1rem;
-  text-align: justify;
-  line-height: 1.6rem;
-}
-
-.aboutme-section a:hover {
-  text-decoration: underline;
-}
-
-.aboutme-section .lightgreen {
-  color: #60a04c;
-}
-
-.aboutmeCV-section {
+.CV-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,29 +317,29 @@ hr {
   padding-bottom: 10rem;
 }
 
-.aboutmeCV-section h3,
-.aboutmeCV-section h4,
-.aboutmeCV-section h5,
-.aboutmeCV-section p,
-.aboutmeCV-section li {
+.CV-section h3,
+.CV-section h4,
+.CV-section h5,
+.CV-section p,
+.CV-section li {
   line-height: 1.6rem;
   color: #464546;
 }
 
-.aboutmeCV-section h3 {
+.CV-section h3 {
   padding-top: 1.5rem;
   color: #60a04c;
 }
 
-.aboutmeCV-section h5 {
+.CV-section h5 {
   text-transform: uppercase;
 }
 
-.aboutmeCV-section p {
+.CV-section p {
   padding-top: 1rem;
 }
 
-.aboutmeCV-section ul {
+.CV-section ul {
   list-style-image: url("/img/monstera-leaf.png");
   padding-left: 1.5rem;
   padding-top: 1rem;

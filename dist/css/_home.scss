@@ -3,6 +3,7 @@
   height: 100%;
   width: 100%;
   margin: auto 0;
+  padding: 0 2rem;
 
 }
 
@@ -16,8 +17,8 @@
 }
 
 .home-img {
-  width: 90%;
-  margin-top: 1.5rem;
+  width: 100%;
+  margin: 1.5rem 0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -27,21 +28,70 @@ hr {
   margin: 0.2rem;
 }
 
-@include media-IPHONE678 {
-  .home-section {
-    padding-top: 2rem;
+.aboutme-section {
+  display: flex;
+  flex-direction: column;
 
-    .home-img {
-      margin-top: 2rem;
+  h3 {
+    color: $primary;
+    font-weight: bold;
+    align-self: center;
+  }
+
+  p {
+    padding-top: 1rem;
+    text-align: justify;
+    line-height: 1.6rem;
+  }
+
+  a {
+    text-decoration: underline;
+
+    a:hover {
+      color: $secondary;
+
     }
+  }
+
+  .lightgreen {
+    color: $secondary;
   }
 }
 
-@include media-lg-1024 {
-  main {
-    display: flex;
-    justify-content: center;
+@include media-IPHONE678 {
+  .home-img {
+    margin: 2rem 0;
   }
+}
+
+@include media-md-768 {
+  .home-container {
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .lightgreen {
+      font-size: 1.1rem;
+      ;
+    }
+  }
+
+  .home-section {
+    padding-top: 2rem;
+  }
+
+  .aboutme-section {
+    padding: 2rem 0;
+  }
+}
+
+
+@include media-lg-1024 {
 
   .home-section {
     padding-top: 2rem;
@@ -53,18 +103,11 @@ hr {
   }
 }
 
+
 @include media-xl-1600 {
   .home-section {
     padding-top: 2rem;
     width: 100%;
-
-    h1 {
-      font-size: 2.2rem;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-    }
 
     .home-img {
       width: 62%;
