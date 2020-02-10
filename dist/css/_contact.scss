@@ -1,0 +1,40 @@
+.contact {
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h2 {
+        font-size: 2rem;
+        color: $primary;
+    }
+
+    .contact-list {
+        font-size: 1.2rem;
+        color: $dark-grey;
+
+        h3,
+        a {
+            color: $secondary;
+        }
+
+        i {
+            color: darken($secondary, 30%);
+            font-size: 1.1rem;
+            padding: 0 1rem 0 0;
+        }
+
+        .contact-div {
+            margin-top: 1.5rem;
+        }
+    }
+
+}
+
+.footer-container {
+    display: none;
+}

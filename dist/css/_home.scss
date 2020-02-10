@@ -92,7 +92,7 @@ hr {
 
 
 @include media-lg-1024 {
-  .home-wrapper {
+  .wrapper {
     width: 100%;
     @include flexCenterColumn;
   }
