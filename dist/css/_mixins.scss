@@ -10,8 +10,8 @@
   }
 }
 
-@mixin media-max-768 {
-  @media screen and (max-width: 768px) {
+@mixin media-max-1024 {
+  @media screen and (max-width: 1024px) {
     @content;
   }
 }

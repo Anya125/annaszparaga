@@ -91,7 +91,7 @@ button:active {
   background: rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .menu-nav {
     background-image: url("/img/gradient.jpg");
   }
@@ -281,12 +281,40 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
+  .home-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .home-section {
     padding-top: 2rem;
     width: 100%;
   }
   .home-section .home-img {
-    width: 58%;
+    width: 55%;
+  }
+  .aboutme-section {
+    max-width: 70%;
   }
 }
 
@@ -296,7 +324,7 @@ hr {
     width: 100%;
   }
   .home-section .home-img {
-    width: 62%;
+    width: 65%;
   }
 }
 

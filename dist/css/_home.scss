@@ -92,14 +92,26 @@ hr {
 
 
 @include media-lg-1024 {
+  .home-wrapper {
+    width: 100%;
+    @include flexCenterColumn;
+  }
+
+  .home-container {
+    @include flexCenterColumn;
+  }
 
   .home-section {
     padding-top: 2rem;
     width: 100%;
 
     .home-img {
-      width: 58%;
+      width: 55%;
     }
+  }
+
+  .aboutme-section {
+    max-width: 70%;
   }
 }
 
@@ -110,7 +122,7 @@ hr {
     width: 100%;
 
     .home-img {
-      width: 62%;
+      width: 65%;
     }
   }
 }
