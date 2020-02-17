@@ -1,29 +1,44 @@
+.wrapper-contact {
+    // clip-path: polygon(100% 49%, 44% 100%, 100% 100%);
+    // background: rgb(11, 93, 64);
+    // background: linear-gradient(90deg, rgba(11, 93, 64, 1) 0%, rgba(28, 108, 68, 1) 50%, rgba(48, 126, 78, 1) 100%);
+    // width: 100%;
+    // height: 100%;
+    // position: absolute;
+    // z-index: -1;
+
+}
+
 .contact {
-    height: 100%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
+    color: $dark-grey;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 999;
+    padding: 2rem;
 
 
     h2 {
         font-size: 2rem;
-        color: $primary;
+        color: darken($secondary, 10%);
     }
 
     .contact-list {
         font-size: 1.2rem;
-        color: $dark-grey;
 
         h3,
         a {
             color: $secondary;
         }
 
+        a:hover {
+            color: $primary;
+        }
+
         i {
-            color: darken($secondary, 30%);
             font-size: 1.1rem;
             padding: 0 1rem 0 0;
         }
@@ -35,6 +50,56 @@
 
 }
 
-.footer-container {
+.hidden-footer {
     display: none;
+}
+
+@include media-IPHONE678 {}
+
+@include media-md-768 {}
+
+@include media-lg-1024 {
+    .contact {
+        padding-top: 5rem;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .contact-list {
+            font-size: 1.5rem;
+
+            i {
+                font-size: 1.3rem;
+            }
+
+            .contact-div {
+                margin: 3.5rem 0;
+            }
+        }
+
+    }
+}
+
+@include media-xl-1600 {
+    .contact {
+        padding-top: 6rem;
+
+        h2 {
+            font-size: 2.8rem;
+        }
+
+        .contact-list {
+            font-size: 1.8rem;
+
+            i {
+                font-size: 1.5rem;
+            }
+
+            .contact-div {
+                margin: 4rem 0;
+            }
+        }
+
+    }
 }
