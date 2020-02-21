@@ -1,20 +1,23 @@
+.CVRef-container {
+    max-width: 1440px;
+    height: 100%;
+    width: 100%;
+    margin: auto 0;
+    color: $dark-grey;
+
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
 .CV-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: justify;
     padding: 1.5rem;
     background-color: #f3f3f3;
-    padding-bottom: 10rem;
-
-    h3,
-    h4,
-    h5,
-    p,
-    li {
-        line-height: 1.6rem;
-        color: $dark-grey;
-    }
 
     h3 {
         padding-top: 1.5rem;
@@ -35,8 +38,42 @@
         padding-top: 1rem;
     }
 
-    li {}
+    .div-flex-start {
+        padding-top: 1rem;
+    }
 }
+
+.references-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 1.5rem;
+
+    .references-div {
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .name-company-div {
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+
+    h3 {
+        color: $secondary;
+    }
+
+    h2 {
+        color: darken($primary, 3%);
+    }
+}
+
+
+
 
 @include media-IPHONE678 {}
 
