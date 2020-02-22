@@ -46,25 +46,9 @@
 .references-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: justify;
+    text-align: center;
     padding: 1.5rem;
     background-image: url("/img/baner1.jpg");
-
-    .references-div {
-        padding: 1rem;
-        margin-top: 3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: justify;
-        background-color: #f1f1f1;
-    }
-
-    .name-company-div {
-        width: 100%;
-        padding: 1rem 0rem;
-    }
 
     h3 {
         color: $secondary;
@@ -77,7 +61,30 @@
     h1 {
         color: #f3f3f3;
     }
+
+    .references-div {
+        padding: 0 1rem 1rem 1rem;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .shadow {
+        padding: 2rem;
+        height: 330px;
+        background-color: #f1f1f1;
+        box-shadow: 4px 4px 4px #00000017;
+    }
 }
+
+.name-company-div {
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+
 
 
 
