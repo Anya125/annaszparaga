@@ -8,7 +8,7 @@
 }
 
 body {
-  padding-bottom: 8rem;
+  padding-bottom: 7.7rem;
 }
 
 h1,
@@ -340,7 +340,8 @@ hr {
 }
 
 .CVRef-container h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .CV-section {
@@ -395,10 +396,12 @@ hr {
           align-items: center;
   text-align: justify;
   padding: 1.5rem;
+  background-image: url("/img/baner1.jpg");
 }
 
 .references-section .references-div {
-  padding-top: 3rem;
+  padding: 1rem;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,6 +413,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   text-align: justify;
+  background-color: #f1f1f1;
 }
 
 .references-section .name-company-div {
@@ -423,6 +427,10 @@ hr {
 
 .references-section h2 {
   color: #094f37;
+}
+
+.references-section h1 {
+  color: #f3f3f3;
 }
 
 .contact {
