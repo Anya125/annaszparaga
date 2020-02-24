@@ -2,7 +2,7 @@
 var hamburger = document.querySelector(".hamburger");
 var menu = document.querySelector(".menu-nav");
 // On click
-hamburger.addEventListener("click", function() {
+hamburger.addEventListener("click", function () {
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
   menu.classList.toggle("collapsed");
@@ -28,8 +28,7 @@ $(".testimonials").slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
@@ -46,7 +45,7 @@ $(".testimonials").slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

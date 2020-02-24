@@ -1,13 +1,14 @@
-.CVRef-container {
-    max-width: 1440px;
+.cvRef-container {
     height: 100%;
     width: 100%;
     margin: auto 0;
-    color: $dark-grey;
+
+    .title {
+        padding-top: 1rem;
+    }
 
     h1 {
         font-size: 2rem;
-        padding-top: 2rem;
     }
 }
 
@@ -16,11 +17,12 @@
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    padding: 1.5rem;
     background-color: #f3f3f3;
+    padding: 3rem 1.5rem;
+
+
 
     h3 {
-        padding-top: 1.5rem;
         color: $secondary;
     }
 
@@ -38,17 +40,43 @@
         padding-top: 1rem;
     }
 
-    .div-flex-start {
-        padding-top: 1rem;
+    .workExperience-div {
+        padding-top: 3rem;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem;
+
+    .technicalSkills-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .skills-icons {
+            padding-top: 3rem;
+        }
+
+        .iconsRow {
+            i {
+                padding: 10px;
+            }
+        }
     }
 }
 
 .references-section {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    padding: 1.5rem;
     background-image: url("/img/baner1.jpg");
+    padding: 3rem 1.5rem;
 
     h3 {
         color: $secondary;
@@ -58,9 +86,17 @@
         color: darken($primary, 3%);
     }
 
-    h1 {
+    h1,
+    h4,
+    a {
         color: #f3f3f3;
     }
+
+    h4 {
+        padding-top: 2rem;
+    }
+
+
 
     .references-div {
         padding: 0 1rem 1rem 1rem;
@@ -77,15 +113,12 @@
         background-color: #f1f1f1;
         box-shadow: 4px 4px 4px #00000017;
     }
+
+    .name-company-div {
+        width: 100%;
+        padding: 1rem 0rem;
+    }
 }
-
-.name-company-div {
-    width: 100%;
-    padding: 1rem 0rem;
-}
-
-
-
 
 
 
@@ -93,6 +126,11 @@
 
 @include media-md-768 {}
 
-@include media-lg-1024 {}
+@include media-lg-1024 {
+    .wrapper {
+        width: 100%;
+        @include flexCenterColumn;
+    }
+}
 
 @include media-xl-1600 {}
