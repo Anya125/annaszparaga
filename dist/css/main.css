@@ -322,7 +322,7 @@ hr {
             flex-direction: column;
   }
   .home-section {
-    padding-top: 2rem;
+    padding-top: 6rem;
     width: 100%;
   }
   .home-section .home-img {
@@ -330,12 +330,20 @@ hr {
   }
   .aboutme-section {
     max-width: 70%;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+  .aboutme-section h3 {
+    font-size: 1.8rem;
+  }
+  .aboutme-section p {
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .home-section {
-    padding-top: 2rem;
+    padding-top: 8rem;
     width: 100%;
   }
   .home-section .home-img {
