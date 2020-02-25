@@ -193,6 +193,20 @@ button:active {
   }
 }
 
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .home-container {
   max-width: 1440px;
   height: 100%;
@@ -201,7 +215,7 @@ button:active {
   padding: 0 1.5rem;
 }
 
-.home-section {
+.home-container .home-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,11 +229,11 @@ button:active {
   padding-top: 1rem;
 }
 
-.home-section h1 {
+.home-container .home-section h1 {
   font-size: 1.5rem;
 }
 
-.home-img {
+.home-container .home-img {
   width: 100%;
   margin: 1.5rem 0;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -240,6 +254,7 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 .aboutme-section h3 {
@@ -276,7 +291,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .home-container hr {
-    margin: 1.2rem;
+    margin: 1rem;
   }
   .home-container h1 {
     font-size: 2.2rem;
@@ -287,13 +302,13 @@ hr {
   .home-container .lightgreen {
     font-size: 1.1rem;
   }
-  .home-section {
+  .home-container .home-section {
     padding-top: 2rem;
   }
-  .aboutme-section {
+  .home-container .aboutme-section {
     padding: 2rem 0;
   }
-  .home-img {
+  .home-container .home-img {
     width: 60%;
   }
 }
@@ -324,22 +339,22 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .home-section {
+  .home-container .home-section {
     padding-top: 6rem;
     width: 100%;
   }
-  .home-section .home-img {
+  .home-container .home-section .home-img {
     width: 55%;
   }
-  .aboutme-section {
+  .home-container .aboutme-section {
     max-width: 70%;
     padding-top: 3rem;
     padding-bottom: 6rem;
   }
-  .aboutme-section h3 {
+  .home-container .aboutme-section h3 {
     font-size: 1.8rem;
   }
-  .aboutme-section p {
+  .home-container .aboutme-section p {
     font-size: 1.2rem;
   }
 }
