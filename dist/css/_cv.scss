@@ -231,15 +231,41 @@
 
 @include media-lg-1024 {
 
+    .cvRef-container {
+        .wrapper {
+            width: 100%;
+            @include flexCenterColumn;
+        }
 
-    .wrapper {
-        width: 100%;
-        @include flexCenterColumn;
+        .workExperience-div {
+            max-width: 40vw;
+        }
+
+        .skills-section {
+            .icons-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                grid-gap: 3.5rem 3.5rem;
+                justify-content: center;
+                padding-top: 3rem;
+
+            }
+
+            .a-btn-CV {
+                padding: 1.5rem;
+
+                a {
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+
+
     }
 
-    .workExperience-div {
-        max-width: 40vw;
-    }
+
 }
 
 @include media-xl-1600 {}

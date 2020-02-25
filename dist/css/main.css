@@ -596,7 +596,7 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-  .wrapper {
+  .cvRef-container .wrapper {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -609,8 +609,27 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .workExperience-div {
+  .cvRef-container .workExperience-div {
     max-width: 40vw;
+  }
+  .cvRef-container .skills-section .icons-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 3.5rem 3.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 3rem;
+  }
+  .cvRef-container .skills-section .a-btn-CV {
+    padding: 1.5rem;
+  }
+  .cvRef-container .skills-section .a-btn-CV a {
+    font-size: 1.5rem;
   }
 }
 
