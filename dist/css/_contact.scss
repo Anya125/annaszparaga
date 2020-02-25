@@ -56,7 +56,28 @@
 
 @include media-IPHONE678 {}
 
-@include media-md-768 {}
+@include media-md-768 {
+    .contact {
+        padding-top: 5rem;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .contact-list {
+            font-size: 1.5rem;
+
+            i {
+                font-size: 1.3rem;
+            }
+
+            .contact-div {
+                margin: 3.5rem 0;
+            }
+        }
+
+    }
+}
 
 @include media-lg-1024 {
     .contact {
