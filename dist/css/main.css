@@ -376,7 +376,6 @@ hr {
 
 .CV-section .workExperience-div {
   padding-top: 3rem;
-  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,6 +402,10 @@ hr {
   padding: 3rem 1.5rem;
 }
 
+.skills-section h1 {
+  color: #0b5d40;
+}
+
 .skills-section .technicalSkills-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,12 +419,62 @@ hr {
           align-items: center;
 }
 
-.skills-section .technicalSkills-div .skills-icons {
+.skills-section .technicalSkills-div .icons-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 2.5rem 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 3rem;
 }
 
-.skills-section .technicalSkills-div .iconsRow i {
-  padding: 10px;
+.skills-section .technicalSkills-div .icons-container .icon-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-section .technicalSkills-div .icons-container .icon-div i {
+  color: #2c2c2c;
+}
+
+.skills-section .downloadCV-div {
+  padding: 3rem 0 0;
+  text-align: center;
+}
+
+.skills-section .downloadCV-div .title {
+  padding: 2rem 0;
+}
+
+.skills-section .downloadCV-div .a-btn-CV {
+  padding: 1rem;
+  background-color: #66aa51;
+  border: solid 1px #60a04c;
+  border-radius: 0.5rem;
+  -webkit-transition: ease 250ms all;
+  transition: ease 250ms all;
+}
+
+.skills-section .downloadCV-div .a-btn-CV a {
+  color: #fff;
+}
+
+.skills-section .downloadCV-div .a-btn-CV:hover {
+  background-color: #5a9647;
+  cursor: pointer;
 }
 
 .references-section {
@@ -490,6 +543,9 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .workExperience-div {
+    max-width: 40vw;
   }
 }
 

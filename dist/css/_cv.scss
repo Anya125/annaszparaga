@@ -42,7 +42,6 @@
 
     .workExperience-div {
         padding-top: 3rem;
-        max-width: 1000px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -56,22 +55,69 @@
     align-items: center;
     padding: 3rem 1.5rem;
 
+    h1 {
+        color: $primary;
+    }
+
     .technicalSkills-div {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .skills-icons {
+        .icons-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 2.5rem 1rem;
+            justify-content: center;
             padding-top: 3rem;
-        }
 
-        .iconsRow {
-            i {
-                padding: 10px;
+            .icon-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                i {
+                    color: darken($dark-grey, 10%);
+                }
             }
         }
+
     }
+
+    .downloadCV-div {
+        padding: 3rem 0 0;
+        text-align: center;
+
+        .title {
+            padding: 2rem 0;
+        }
+
+        .a-btn-CV {
+            padding: 1rem;
+            background-color: lighten($secondary, 3%);
+            border: solid 1px $secondary;
+            border-radius: 0.5rem;
+            transition: ease 250ms all;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .a-btn-CV:hover {
+            background-color: darken($secondary, 3%);
+            cursor: pointer;
+        }
+    }
+
+
 }
+
+
+
+
+
 
 .references-section {
     text-align: center;
@@ -130,6 +176,10 @@
     .wrapper {
         width: 100%;
         @include flexCenterColumn;
+    }
+
+    .workExperience-div {
+        max-width: 40vw;
     }
 }
 
