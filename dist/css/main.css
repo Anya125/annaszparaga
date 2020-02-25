@@ -611,7 +611,7 @@ hr {
             flex-direction: column;
   }
   .cvRef-container .workExperience-div {
-    max-width: 40vw;
+    max-width: 50vw;
   }
   .cvRef-container .skills-section .icons-container {
     display: -ms-grid;
@@ -631,6 +631,11 @@ hr {
   }
   .cvRef-container .skills-section .a-btn-CV a {
     font-size: 1.5rem;
+  }
+  .cvRef-container .testimonials-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
   }
 }
 
