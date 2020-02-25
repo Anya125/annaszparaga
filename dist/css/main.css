@@ -275,6 +275,9 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+  .home-container hr {
+    margin: 1.2rem;
+  }
   .home-container h1 {
     font-size: 2.2rem;
   }

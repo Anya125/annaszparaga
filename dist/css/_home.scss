@@ -67,6 +67,10 @@ hr {
 @include media-md-768 {
   .home-container {
 
+    hr {
+      margin: 1.2rem;
+    }
+
     h1 {
       font-size: 2.2rem;
     }
