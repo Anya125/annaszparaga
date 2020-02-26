@@ -1,7 +1,110 @@
+.projects-container {
+    // max-width: 1440px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: auto 0;
+    padding: 1.5rem;
+    background-color: $bg-light-grey;
+    color: $dark-grey;
+}
+
+.projects-div {
+    width: 80vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+
+
+    .projects-item {
+        position: relative;
+        border-bottom: 10px solid #0d6b49;
+        overflow: hidden;
+
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            color: darken($light-grey, 25%);
+            padding: 0 0 0.5rem 0;
+        }
+
+    }
+
+    .project-btn {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: (1fr);
+        align-items: center;
+        text-align: center;
+    }
+
+    .a-btn {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
 @include media-IPHONE678 {}
 
 @include media-md-768 {}
 
-@include media-lg-1024 {}
+@include media-lg-1024 {
+    .projects-div {
+        .projects-item {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: $secondary;
+                opacity: 0;
+                @include transition-ease;
+            }
+
+            &:hover {
+                &::after {
+                    top: 0;
+                    opacity: 0.9;
+                }
+
+                .a-btn {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .projects-div {
+        .a-btn {
+            opacity: 0;
+            @include transition-ease;
+
+            &:hover {
+                color: $bg-light-grey;
+            }
+        }
+    }
+}
 
 @include media-xl-1600 {}
