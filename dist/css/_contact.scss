@@ -20,31 +20,27 @@
     z-index: 999;
     padding: 2rem;
 
+    h2,
+    a {
+        color: $secondary;
+    }
 
-    h1 {
-        color: $primary;
+    h2 {
+        padding-top: 0.5rem;
     }
 
     .contact-list {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
 
-        h3,
-        a {
-            color: $secondary;
-        }
+    .contact-div {
+        margin-top: 1.5rem;
+    }
 
-        a:hover {
-            color: $primary;
-        }
-
-        i {
-            font-size: 1.1rem;
-            padding: 0 1rem 0 0;
-        }
-
-        .contact-div {
-            margin-top: 1.5rem;
-        }
+    .contact-icon {
+        font-size: 1.1rem;
+        padding: 0 1rem 0 0;
     }
 
 }
@@ -57,69 +53,66 @@
 
 @include media-md-768 {
     .contact {
+        @include headersSetupIpad;
         padding-top: 5rem;
-
-        h2 {
-            font-size: 2.5rem;
-        }
 
         .contact-list {
             font-size: 1.5rem;
-
-            i {
-                font-size: 1.3rem;
-            }
-
-            .contact-div {
-                margin: 3.5rem 0;
-            }
         }
 
+        .contact-div {
+            margin: 3.5rem 0;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+        }
     }
+
 }
+
 
 @include media-lg-1024 {
     .contact {
-        padding-top: 5rem;
+        @include headersSetupComputer;
+        padding-top: 7rem;
 
-        h2 {
-            font-size: 2.5rem;
+        h2:hover,
+        a:hover {
+            color: $primary;
         }
-
-        .contact-list {
-            font-size: 1.5rem;
-
-            i {
-                font-size: 1.3rem;
-            }
-
-            .contact-div {
-                margin: 3.5rem 0;
-            }
-        }
-
     }
+
+    .contact-list {
+        font-size: 1.8rem;
+    }
+
+    .contact-div {
+        margin: 6rem 0;
+    }
+
+    .contact-icon {
+        font-size: 1.8rem;
+    }
+
+
 }
+
 
 @include media-xl-1600 {
     .contact {
-        padding-top: 6rem;
 
-        h2 {
-            font-size: 2.8rem;
-        }
+        @include headersSetupXXLdevices;
+        padding-top: 10rem;
+
+
 
         .contact-list {
-            font-size: 1.8rem;
-
-            i {
-                font-size: 1.5rem;
-            }
-
-            .contact-div {
-                margin: 4rem 0;
-            }
+            font-size: 2rem;
         }
 
+        .contact-icon {
+            font-size: 2rem;
+        }
     }
 }

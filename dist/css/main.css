@@ -18,6 +18,11 @@ h5 {
 
 h1 {
   font-size: 1.5rem;
+  color: #0b5d40;
+}
+
+h2 {
+  font-size: 1.4rem;
 }
 
 h3 {
@@ -964,30 +969,27 @@ hr {
   padding: 2rem;
 }
 
-.contact h1 {
-  color: #0b5d40;
-}
-
-.contact .contact-list {
-  font-size: 1.2rem;
-}
-
-.contact .contact-list h3,
-.contact .contact-list a {
+.contact h2,
+.contact a {
   color: #60a04c;
 }
 
-.contact .contact-list a:hover {
-  color: #0b5d40;
+.contact h2 {
+  padding-top: 0.5rem;
 }
 
-.contact .contact-list i {
+.contact .contact-list {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.contact .contact-div {
+  margin-top: 1.5rem;
+}
+
+.contact .contact-icon {
   font-size: 1.1rem;
   padding: 0 1rem 0 0;
-}
-
-.contact .contact-list .contact-div {
-  margin-top: 1.5rem;
 }
 
 .hidden-footer {
@@ -998,53 +1000,99 @@ hr {
   .contact {
     padding-top: 5rem;
   }
+  .contact h1 {
+    font-size: 2rem;
+  }
   .contact h2 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
+  }
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+  .contact h4 {
+    font-size: 1.3rem;
+  }
+  .contact h5 {
+    font-size: 1.1rem;
+  }
+  .contact p {
+    font-size: 1.1rem;
   }
   .contact .contact-list {
     font-size: 1.5rem;
   }
-  .contact .contact-list i {
-    font-size: 1.3rem;
-  }
-  .contact .contact-list .contact-div {
+  .contact .contact-div {
     margin: 3.5rem 0;
+  }
+  .contact .contact-icon {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .contact {
-    padding-top: 5rem;
+    padding-top: 7rem;
+  }
+  .contact h1 {
+    font-size: 2.3rem;
   }
   .contact h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  .contact .contact-list {
-    font-size: 1.5rem;
+  .contact h3 {
+    font-size: 1.8rem;
   }
-  .contact .contact-list i {
-    font-size: 1.3rem;
+  .contact h4 {
+    font-size: 1.6rem;
   }
-  .contact .contact-list .contact-div {
-    margin: 3.5rem 0;
+  .contact h5 {
+    font-size: 1.4rem;
+  }
+  .contact p {
+    font-size: 1.2rem;
+  }
+  .contact h2:hover,
+  .contact a:hover {
+    color: #0b5d40;
+  }
+  .contact-list {
+    font-size: 1.8rem;
+  }
+  .contact-div {
+    margin: 6rem 0;
+  }
+  .contact-icon {
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .contact {
-    padding-top: 6rem;
+    padding-top: 10rem;
+  }
+  .contact h1 {
+    font-size: 2.5rem;
   }
   .contact h2 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+  }
+  .contact h3 {
+    font-size: 2rem;
+  }
+  .contact h4 {
+    font-size: 1.9rem;
+  }
+  .contact h5 {
+    font-size: 1.6rem;
+  }
+  .contact p {
+    font-size: 1.4rem;
   }
   .contact .contact-list {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-  .contact .contact-list i {
-    font-size: 1.5rem;
-  }
-  .contact .contact-list .contact-div {
-    margin: 4rem 0;
+  .contact .contact-icon {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
