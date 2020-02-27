@@ -391,8 +391,15 @@ hr {
   background-color: #f3f3f3;
 }
 
-.title-project h1 {
+.projects-container h1 {
   color: #0b5d40;
+  font-size: 1.5rem;
+}
+
+.projects-container h4 {
+  color: #9c9fa2;
+  font-size: 1.1rem;
+  padding: 0 0 0.5rem 0;
 }
 
 .projects-div {
@@ -414,11 +421,6 @@ hr {
 
 .projects-div .projects-item img {
   width: 100%;
-}
-
-.projects-div .projects-item h3 {
-  color: #9c9fa2;
-  padding: 0 0 0.5rem 0;
 }
 
 .projects-div .project-btn {
@@ -443,28 +445,33 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .title-project h1 {
+  .projects-container h1 {
     font-size: 2rem;
   }
-  .projects-item h3 {
-    font-size: 1.2rem;
+  .projects-container h4 {
+    font-size: 1.3rem;
+  }
+  .projects-div {
+    grid-gap: 3rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .title-project {
-    padding: 1rem;
-  }
-  .title-project h1 {
-    font-size: 2.3rem;
-  }
   .projects-container {
     padding: 2rem 1.5rem 8rem;
+  }
+  .projects-container h1 {
+    font-size: 2.3rem;
+  }
+  .projects-container h4 {
+    font-size: 1.6rem;
+  }
+  .title-project {
+    padding: 1rem;
   }
   .projects-div {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
     max-width: 1440px;
   }
   .projects-div .projects-item::after {
@@ -497,11 +504,17 @@ hr {
 }
 
 @media screen and (min-width: 1600px) {
-  .title-project h1 {
+  .projects-container {
+    padding: 2rem 1.5rem 8rem;
+  }
+  .projects-container h1 {
     font-size: 2.5rem;
   }
-  .projects-item h3 {
-    font-size: 1.5rem;
+  .projects-container h4 {
+    font-size: 1.9rem;
+  }
+  .title-project {
+    padding: 2rem;
   }
   .projects-div {
     -ms-grid-columns: (1fr)[3];
