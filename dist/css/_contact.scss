@@ -21,13 +21,15 @@
     padding: 2rem;
 
 
-    h2 {
-        font-size: 2rem;
-        color: darken($secondary, 10%);
+    h1 {
+        font-size: 2.3rem;
+        color: $primary;
     }
 
     .contact-list {
         font-size: 1.2rem;
+
+
 
         h3,
         a {

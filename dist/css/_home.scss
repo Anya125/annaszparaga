@@ -1,3 +1,9 @@
+hr {
+  width: 100%;
+  border-top: 1px solid $primary;
+  margin: 0.2rem;
+}
+
 .wrapper {
   width: 100%;
   @include flexCenterColumn;
@@ -10,14 +16,21 @@
   margin: auto 0;
   padding: 0 1.5rem;
 
-  .home-section {
-    @include flexCenterColumn;
-    padding-top: 1rem;
-
-    h1 {
-      font-size: 1.5rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+    color: $primary;
   }
+
+  h3 {
+    font-size: 1.3rem;
+    color: $dark-grey;
+  }
+
+}
+
+.home-section {
+  @include flexCenterColumn;
+  padding-top: 1rem;
 
   .home-img {
     width: 100%;
@@ -27,21 +40,12 @@
 }
 
 
-
-hr {
-  width: 100%;
-  border-top: 1px solid $primary;
-  margin: 0.2rem;
-}
-
 .aboutme-section {
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
 
-  h3 {
-    color: $primary;
-    font-weight: bold;
+  h1 {
     align-self: center;
   }
 
@@ -75,32 +79,32 @@ hr {
   .home-container {
 
     hr {
-      margin: 1rem;
+      margin: 0.5rem;
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     h3 {
       font-size: 1.5rem;
     }
+  }
+
+  .home-section {
+    padding-top: 2rem;
+
+    .home-img {
+      width: 65%;
+    }
+  }
+
+  .aboutme-section {
+    padding: 2rem 0;
 
     .lightgreen {
       font-size: 1.1rem;
       ;
-    }
-
-    .home-section {
-      padding-top: 2rem;
-    }
-
-    .aboutme-section {
-      padding: 2rem 0;
-    }
-
-    .home-img {
-      width: 60%;
     }
   }
 
@@ -117,31 +121,33 @@ hr {
   .home-container {
     @include flexCenterColumn;
 
-    .home-section {
-      padding-top: 6rem;
-      width: 100%;
-
-      .home-img {
-        width: 55%;
-      }
+    p {
+      font-size: 1.2rem;
     }
 
-    .aboutme-section {
-      max-width: 70%;
-      padding-top: 3rem;
-      padding-bottom: 6rem;
+    h1 {
+      font-size: 2.3rem;
+    }
 
-      h3 {
-        font-size: 1.8rem;
-      }
-
-      p {
-        font-size: 1.2rem;
-      }
+    hr {
+      margin: 1rem 0 0 0;
     }
   }
 
+  .home-section {
+    padding-top: 6rem;
 
+    .home-img {
+      width: 55%;
+    }
+  }
+
+  .aboutme-section {
+    max-width: 70%;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+
+  }
 }
 
 

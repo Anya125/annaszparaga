@@ -7,7 +7,12 @@
   margin: auto 0;
   padding: 1.5rem;
   background-color: $bg-light-grey;
-  color: $dark-grey;
+}
+
+.title-project {
+  h1 {
+    color: $primary;
+  }
 }
 
 .projects-div {
@@ -52,8 +57,7 @@
   }
 }
 
-@include media-IPHONE678 {
-}
+@include media-IPHONE678 {}
 
 @include media-md-768 {
   .title-project {
@@ -72,6 +76,10 @@
 @include media-lg-1024 {
   .title-project {
     padding: 1rem;
+
+    h1 {
+      font-size: 2.3rem;
+    }
   }
 
   .projects-container {
@@ -133,6 +141,7 @@
       font-size: 1.5rem;
     }
   }
+
   .projects-div {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;

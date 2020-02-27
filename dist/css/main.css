@@ -193,6 +193,12 @@ button:active {
   }
 }
 
+hr {
+  width: 100%;
+  border-top: 1px solid #0b5d40;
+  margin: 0.2rem;
+}
+
 .wrapper {
   width: 100%;
   display: -webkit-box;
@@ -215,7 +221,17 @@ button:active {
   padding: 0 1.5rem;
 }
 
-.home-container .home-section {
+.home-container h1 {
+  font-size: 1.5rem;
+  color: #0b5d40;
+}
+
+.home-container h3 {
+  font-size: 1.3rem;
+  color: #464546;
+}
+
+.home-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,21 +245,11 @@ button:active {
   padding-top: 1rem;
 }
 
-.home-container .home-section h1 {
-  font-size: 1.5rem;
-}
-
-.home-container .home-img {
+.home-section .home-img {
   width: 100%;
   margin: 1.5rem 0;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-hr {
-  width: 100%;
-  border-top: 1px solid #0b5d40;
-  margin: 0.2rem;
 }
 
 .aboutme-section {
@@ -257,9 +263,7 @@ hr {
   padding-bottom: 2rem;
 }
 
-.aboutme-section h3 {
-  color: #0b5d40;
-  font-weight: bold;
+.aboutme-section h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -291,25 +295,25 @@ hr {
 
 @media screen and (min-width: 768px) {
   .home-container hr {
-    margin: 1rem;
+    margin: 0.5rem;
   }
   .home-container h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .home-container h3 {
     font-size: 1.5rem;
   }
-  .home-container .lightgreen {
-    font-size: 1.1rem;
-  }
-  .home-container .home-section {
+  .home-section {
     padding-top: 2rem;
   }
-  .home-container .aboutme-section {
+  .home-section .home-img {
+    width: 65%;
+  }
+  .aboutme-section {
     padding: 2rem 0;
   }
-  .home-container .home-img {
-    width: 60%;
+  .aboutme-section .lightgreen {
+    font-size: 1.1rem;
   }
 }
 
@@ -339,23 +343,25 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .home-container .home-section {
-    padding-top: 6rem;
-    width: 100%;
+  .home-container p {
+    font-size: 1.2rem;
   }
-  .home-container .home-section .home-img {
+  .home-container h1 {
+    font-size: 2.3rem;
+  }
+  .home-container hr {
+    margin: 1rem 0 0 0;
+  }
+  .home-section {
+    padding-top: 6rem;
+  }
+  .home-section .home-img {
     width: 55%;
   }
-  .home-container .aboutme-section {
+  .aboutme-section {
     max-width: 70%;
     padding-top: 3rem;
     padding-bottom: 6rem;
-  }
-  .home-container .aboutme-section h3 {
-    font-size: 1.8rem;
-  }
-  .home-container .aboutme-section p {
-    font-size: 1.2rem;
   }
 }
 
@@ -383,7 +389,10 @@ hr {
   margin: auto 0;
   padding: 1.5rem;
   background-color: #f3f3f3;
-  color: #464546;
+}
+
+.title-project h1 {
+  color: #0b5d40;
 }
 
 .projects-div {
@@ -446,6 +455,9 @@ hr {
   .title-project {
     padding: 1rem;
   }
+  .title-project h1 {
+    font-size: 2.3rem;
+  }
   .projects-container {
     padding: 2rem 1.5rem 8rem;
   }
@@ -507,6 +519,10 @@ hr {
 
 .cvRef-container .title {
   padding-top: 1rem;
+}
+
+.cvRef-container .title h1 {
+  color: #0b5d40;
 }
 
 .cvRef-container h1 {
@@ -705,7 +721,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .cvRef-container h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .cvRef-container h3 {
     font-size: 1.8rem;
@@ -814,9 +830,9 @@ hr {
   padding: 2rem;
 }
 
-.contact h2 {
-  font-size: 2rem;
-  color: #4b7d3c;
+.contact h1 {
+  font-size: 2.3rem;
+  color: #0b5d40;
 }
 
 .contact .contact-list {
