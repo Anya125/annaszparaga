@@ -17,12 +17,10 @@ hr {
   padding: 0 1.5rem;
 
   h1 {
-    font-size: 1.5rem;
     color: $primary;
   }
 
   h3 {
-    font-size: 1.3rem;
     color: $dark-grey;
   }
 
@@ -77,17 +75,10 @@ hr {
 
 @include media-md-768 {
   .home-container {
+    @include headersSetupIpad;
 
     hr {
       margin: 0.5rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    h3 {
-      font-size: 1.5rem;
     }
   }
 
@@ -120,14 +111,7 @@ hr {
 
   .home-container {
     @include flexCenterColumn;
-
-    p {
-      font-size: 1.2rem;
-    }
-
-    h1 {
-      font-size: 2.3rem;
-    }
+    @include headersSetupComputer;
 
     hr {
       margin: 1rem 0 0 0;
@@ -152,6 +136,11 @@ hr {
 
 
 @include media-xl-1600 {
+
+  .home-container {
+    @include headersSetupXXLdevices;
+  }
+
   .home-section {
     padding-top: 8rem;
     width: 100%;

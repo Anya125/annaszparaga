@@ -29,7 +29,7 @@ $(".testimonials").slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [{
-      breakpoint: 1024,
+      breakpoint: 1500,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -38,7 +38,7 @@ $(".testimonials").slick({
       }
     },
     {
-      breakpoint: 800,
+      breakpoint: 950,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2

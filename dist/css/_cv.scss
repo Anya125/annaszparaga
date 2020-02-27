@@ -3,31 +3,29 @@
     width: 100%;
     margin: auto 0;
 
-    .title {
-        padding-top: 1rem;
-
-        h1 {
-            color: $primary;
-        }
-    }
-
     h1 {
-        font-size: 2rem;
+        color: $primary;
     }
+
+    h3 {
+        color: $secondary;
+    }
+
+    h4,
+    h5 {
+        color: darken($dark-grey, 10%);
+    }
+
 }
 
 .CV-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexCenterColumn;
     text-align: justify;
     background-color: #f3f3f3;
     padding: 3rem 1.5rem;
 
-
-
-    h3 {
-        color: $secondary;
+    .title {
+        padding-top: 1rem;
     }
 
     h5 {
@@ -54,14 +52,8 @@
 }
 
 .skills-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexCenterColumn;
     padding: 3rem 1.5rem;
-
-    h1 {
-        color: $primary;
-    }
 
     .technicalSkills-div {
         display: flex;
@@ -119,41 +111,38 @@
 }
 
 
-
-
-
-
 .references-section {
     text-align: center;
     background-image: url("/img/baner1.jpg");
     padding: 3rem 1.5rem;
 
-    h3 {
-        color: $secondary;
+    h1,
+    h5,
+    a {
+        color: #f3f3f3;
     }
 
     h2 {
         color: darken($primary, 3%);
     }
 
-    h1,
-    h4,
-    a {
-        color: #f3f3f3;
+    h3 {
+        color: $secondary;
+        padding-top: 0.5rem;
     }
 
     h4 {
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
-
+    h5 {
+        padding-top: 1.5rem;
+    }
 
     .references-div {
         padding: 0 1rem 1rem 1rem;
         margin-top: 3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexCenterColumn;
         text-align: justify;
     }
 
@@ -173,25 +162,7 @@
 
 @include media-md-768 {
     .cvRef-container {
-        h1 {
-            font-size: 2.3rem;
-        }
-
-        h3 {
-            font-size: 1.8rem;
-        }
-
-        h4 {
-            font-size: 1.5rem;
-        }
-
-        h5 {
-            font-size: 1.2rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-        }
+        @include headersSetupIpad;
 
         li {
             font-size: 1.1rem;
@@ -223,7 +194,7 @@
                 padding-top: 3rem;
 
                 h3 {
-                    font-size: 1.5rem;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -236,10 +207,7 @@
 @include media-lg-1024 {
 
     .cvRef-container {
-        .wrapper {
-            width: 100%;
-            @include flexCenterColumn;
-        }
+        @include headersSetupComputer;
 
         .workExperience-div {
             max-width: 50vw;
@@ -277,4 +245,9 @@
 
 }
 
-@include media-xl-1600 {}
+@include media-xl-1600 {
+    .cvRef-container {
+        @include headersSetupXXLdevices;
+    }
+
+}
