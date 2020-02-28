@@ -72,7 +72,9 @@ button:active {
 /* -------------------- Hamburger animation END -------------------- */
 /* -------------------- HEADER styling START -------------------- */
 .greenBG-menu {
-  background-image: url("/img/gradient.jpg");
+  background: #0b5d40;
+  background: -webkit-gradient(linear, left top, right top, from(#0b5d40), color-stop(50%, #b9d475), to(#307e4e));
+  background: linear-gradient(90deg, #0b5d40 0%, #b9d475 50%, #307e4e 100%);
 }
 
 .nav-container {
@@ -713,6 +715,12 @@ hr {
           align-items: center;
 }
 
+.skills-section .technicalSkills-div h4 {
+  padding-top: 0.5rem;
+  color: #60a04c;
+  text-transform: uppercase;
+}
+
 .skills-section .technicalSkills-div .icons-container {
   display: -ms-grid;
   display: grid;
@@ -950,7 +958,18 @@ hr {
   }
 }
 
+.wrapper-contact {
+  background-image: url("/img/phone1-bg.png");
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  height: 81%;
+  width: 100%;
+  z-index: 1;
+}
+
 .contact {
+  z-index: 2;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #464546;
@@ -996,6 +1015,12 @@ hr {
   display: none;
 }
 
+@media screen and (min-width: 350px) {
+  .wrapper-contact {
+    height: 92%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact {
     padding-top: 5rem;
@@ -1026,6 +1051,10 @@ hr {
   }
   .contact .contact-icon {
     font-size: 1.5rem;
+  }
+  .wrapper-contact {
+    background-image: url("/img/ipad-bg.png");
+    height: 92%;
   }
 }
 
