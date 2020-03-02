@@ -116,7 +116,7 @@ button:active {
 
 @media screen and (max-width: 1024px) {
   .menu-nav {
-    background-image: url("/img/gradient.jpg");
+    background-image: url("../../img/gradient.jpg");
   }
 }
 
@@ -669,7 +669,7 @@ hr {
 }
 
 .CV-section ul {
-  list-style-image: url("/img/monstera-leaf.png");
+  list-style-image: url("../../img/monstera-leaf.png");
   padding-left: 1.5rem;
   padding-top: 1rem;
 }
@@ -781,7 +781,7 @@ hr {
 
 .references-section {
   text-align: center;
-  background-image: url("/img/baner1.jpg");
+  background-image: url("../../img/baner1.jpg");
   padding: 3rem 1.5rem;
 }
 
@@ -959,7 +959,7 @@ hr {
 }
 
 .wrapper-contact {
-  background-image: url("/img/phone1-bg.png");
+  background-image: url("../../img/phone1-bg.png");
   background-size: cover;
   position: fixed;
   bottom: 0;
@@ -1053,7 +1053,7 @@ hr {
     font-size: 1.5rem;
   }
   .wrapper-contact {
-    background-image: url("/img/ipad-bg.png");
+    background-image: url("../../img/ipad-bg.png");
     height: 92%;
   }
 }
@@ -1093,6 +1093,10 @@ hr {
   .contact-icon {
     font-size: 1.8rem;
   }
+  .wrapper-contact {
+    background-image: url("../../img/computer-bg.png");
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -1122,6 +1126,9 @@ hr {
   }
   .contact .contact-icon {
     font-size: 2rem;
+  }
+  .wrapper-contact {
+    height: 110%;
   }
 }
 /*# sourceMappingURL=main.css.map */
