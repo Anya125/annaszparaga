@@ -10,16 +10,12 @@
 }
 
 .contact {
-    z-index: 2;
+    @include flexCenterColumn;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: $dark-grey;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 999;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
 
     h2,
     a {
@@ -28,6 +24,10 @@
 
     h2 {
         padding-top: 0.5rem;
+    }
+
+    .contactinfo-conatiner {
+        width: 80vw;
     }
 
     .contact-list {
@@ -48,7 +48,6 @@
 // ------------------Contactform styling START------------------
 
 .contactform-container {
-    width: 100%;
     padding: 2rem 0 0 0;
 }
 
@@ -101,7 +100,7 @@
 @include media-md-768 {
     .contact {
         @include headersSetupIpad;
-        padding-top: 5rem;
+        padding-top: 3rem;
 
         .contact-list {
             font-size: 1.5rem;
@@ -121,24 +120,31 @@
 @include media-lg-1024 {
     .contact {
         @include headersSetupComputer;
-        padding-top: 7rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
 
         h2:hover,
         a:hover {
             color: $primary;
         }
+
+        .contact-div {
+            margin: 0;
+        }
+
+        .contact-icon {
+            font-size: 1.8rem;
+        }
     }
 
     .contact-list {
         font-size: 1.8rem;
-    }
+        padding: 2rem 0;
 
-    .contact-div {
-        margin: 6rem 0;
-    }
-
-    .contact-icon {
-        font-size: 1.8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 4rem 4rem;
     }
 
 }
@@ -146,7 +152,7 @@
 @include media-xl-1600 {
     .contact {
         @include headersSetupXXLdevices;
-        padding-top: 10rem;
+        padding-top: 5rem;
 
         .contact-list {
             font-size: 2rem;

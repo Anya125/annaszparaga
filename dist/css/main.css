@@ -974,23 +974,21 @@ hr {
 }
 
 .contact {
-  z-index: 2;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: #464546;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 999;
-  padding: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #464546;
+  overflow: hidden;
+  padding: 2rem 2rem 4rem;
 }
 
 .contact h2,
@@ -1000,6 +998,10 @@ hr {
 
 .contact h2 {
   padding-top: 0.5rem;
+}
+
+.contact .contactinfo-conatiner {
+  width: 80vw;
 }
 
 .contact .contact-list {
@@ -1017,7 +1019,6 @@ hr {
 }
 
 .contactform-container {
-  width: 100%;
   padding: 2rem 0 0 0;
 }
 
@@ -1064,7 +1065,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .contact {
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
   .contact h1 {
     font-size: 2rem;
@@ -1097,7 +1098,8 @@ hr {
 
 @media screen and (min-width: 1024px) {
   .contact {
-    padding-top: 7rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
   .contact h1 {
     font-size: 2.3rem;
@@ -1121,20 +1123,28 @@ hr {
   .contact a:hover {
     color: #0b5d40;
   }
+  .contact .contact-div {
+    margin: 0;
+  }
+  .contact .contact-icon {
+    font-size: 1.8rem;
+  }
   .contact-list {
     font-size: 1.8rem;
-  }
-  .contact-div {
-    margin: 6rem 0;
-  }
-  .contact-icon {
-    font-size: 1.8rem;
+    padding: 2rem 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 4rem 4rem;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .contact {
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
   .contact h1 {
     font-size: 2.5rem;
