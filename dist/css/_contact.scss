@@ -1,11 +1,12 @@
 .wrapper-contact {
-    background-image: url("../../img/phone1-bg.png");
+    background-image: url("../../img/baner1.jpg");
     background-size: cover;
     position: fixed;
     bottom: 0;
-    height: 81%;
+    height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: -1;
+    opacity: 0.2;
 }
 
 .contact {
@@ -44,15 +45,58 @@
     }
 }
 
+// ------------------Contactform styling START------------------
+
+.contactform-container {
+    width: 100%;
+    padding: 2rem 0 0 0;
+}
+
+.contactform-input {
+    padding: 1rem 0 0;
+}
+
+.input-field,
+.textarea-field,
+.btn-submit {
+    width: 80vw;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    font-family: inherit;
+    border: 1px solid #0b5d4063;
+    border-radius: 3px;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+    border: 1px solid $primary;
+}
+
+.textarea-field {
+    margin-top: 2rem;
+}
+
+.btn-submit {
+    background-color: #0d6b49;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.btn-submit:focus {
+    background-color: white;
+    color: #0d6b49;
+    @include transition-ease;
+
+}
+
 .hidden-footer {
     display: none;
 }
 
-@include media-IPHONE678 {
-    .wrapper-contact {
-        height: 92%;
-    }
-}
+
+// ------------------Media Query styling START------------------
+
+@include media-IPHONE678 {}
 
 @include media-md-768 {
     .contact {
@@ -72,10 +116,6 @@
         }
     }
 
-    .wrapper-contact {
-        background-image: url("../../img/ipad-bg.png");
-        height: 92%;
-    }
 }
 
 @include media-lg-1024 {
@@ -101,10 +141,6 @@
         font-size: 1.8rem;
     }
 
-    .wrapper-contact {
-        background-image: url("../../img/computer-bg.png");
-        height: 100%;
-    }
 }
 
 @include media-xl-1600 {

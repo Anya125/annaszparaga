@@ -52,11 +52,15 @@ ul {
   padding: 0;
 }
 
-button {
+button,
+input,
+textarea {
   outline: none;
 }
 
-button:active {
+button:active,
+input:active,
+textarea:active {
   outline: none;
 }
 
@@ -959,13 +963,14 @@ hr {
 }
 
 .wrapper-contact {
-  background-image: url("../../img/phone1-bg.png");
+  background-image: url("../../img/baner1.jpg");
   background-size: cover;
   position: fixed;
   bottom: 0;
-  height: 81%;
+  height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
+  opacity: 0.2;
 }
 
 .contact {
@@ -1011,14 +1016,50 @@ hr {
   padding: 0 1rem 0 0;
 }
 
-.hidden-footer {
-  display: none;
+.contactform-container {
+  width: 100%;
+  padding: 2rem 0 0 0;
 }
 
-@media screen and (min-width: 350px) {
-  .wrapper-contact {
-    height: 92%;
-  }
+.contactform-input {
+  padding: 1rem 0 0;
+}
+
+.input-field,
+.textarea-field,
+.btn-submit {
+  width: 80vw;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  font-family: inherit;
+  border: 1px solid #0b5d4063;
+  border-radius: 3px;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  border: 1px solid #0b5d40;
+}
+
+.textarea-field {
+  margin-top: 2rem;
+}
+
+.btn-submit {
+  background-color: #0d6b49;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.btn-submit:focus {
+  background-color: white;
+  color: #0d6b49;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hidden-footer {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1051,10 +1092,6 @@ hr {
   }
   .contact .contact-icon {
     font-size: 1.5rem;
-  }
-  .wrapper-contact {
-    background-image: url("../../img/ipad-bg.png");
-    height: 92%;
   }
 }
 
@@ -1092,10 +1129,6 @@ hr {
   }
   .contact-icon {
     font-size: 1.8rem;
-  }
-  .wrapper-contact {
-    background-image: url("../../img/computer-bg.png");
-    height: 100%;
   }
 }
 
