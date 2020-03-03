@@ -962,17 +962,6 @@ hr {
   }
 }
 
-.wrapper-contact {
-  background-image: url("../../img/baner1.jpg");
-  background-size: cover;
-  position: fixed;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.2;
-}
-
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -989,6 +978,13 @@ hr {
   color: #464546;
   overflow: hidden;
   padding: 2rem 2rem 4rem;
+  background-image: url("../../img/baner1.jpg");
+  background-size: cover;
+  background-blend-mode: lighten;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 .contact h2,
@@ -1001,7 +997,7 @@ hr {
 }
 
 .contact .contactinfo-conatiner {
-  width: 80vw;
+  width: 100%;
 }
 
 .contact .contact-list {
@@ -1029,7 +1025,7 @@ hr {
 .input-field,
 .textarea-field,
 .btn-submit {
-  width: 80vw;
+  width: 100%;
   padding: 0.5rem;
   margin-top: 0.2rem;
   font-family: inherit;
@@ -1066,6 +1062,7 @@ hr {
 @media screen and (min-width: 768px) {
   .contact {
     padding-top: 3rem;
+    padding-bottom: 10rem;
   }
   .contact h1 {
     font-size: 2rem;
@@ -1099,7 +1096,7 @@ hr {
 @media screen and (min-width: 1024px) {
   .contact {
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 20rem;
   }
   .contact h1 {
     font-size: 2.3rem;
@@ -1140,11 +1137,17 @@ hr {
         grid-template-rows: auto;
     grid-gap: 4rem 4rem;
   }
+  .wrapper-contact {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   .contact {
-    padding-top: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
   }
   .contact h1 {
     font-size: 2.5rem;
@@ -1169,9 +1172,6 @@ hr {
   }
   .contact .contact-icon {
     font-size: 2rem;
-  }
-  .wrapper-contact {
-    height: 110%;
   }
 }
 /*# sourceMappingURL=main.css.map */
