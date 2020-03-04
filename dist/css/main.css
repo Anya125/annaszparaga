@@ -310,6 +310,7 @@ hr {
 
 .aboutme-section .lightgreen {
   color: #60a04c;
+  font-family: inherit;
 }
 
 @media screen and (min-width: 350px) {
@@ -508,6 +509,9 @@ hr {
   color: #fff;
   font-size: 2rem;
   background-color: #60a04c;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -581,8 +585,13 @@ hr {
     opacity: 0.9;
   }
   .projects-div .projects-item:hover .a-btn {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     opacity: 1;
     background-color: transparent;
+    position: absolute;
+    top: 49%;
+    width: 100%;
   }
   .projects-div .a-btn {
     opacity: 0;

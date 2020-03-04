@@ -57,6 +57,9 @@
     color: #fff;
     font-size: 2rem;
     background-color: $secondary;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
 
@@ -106,8 +109,12 @@
         }
 
         .a-btn {
+          @include transition-ease;
           opacity: 1;
           background-color: transparent;
+          position: absolute;
+          top: 49%;
+          width: 100%;
         }
       }
     }
