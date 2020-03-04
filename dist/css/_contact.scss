@@ -50,7 +50,7 @@
 }
 
 .contactform-input {
-    padding: 1rem 0 0;
+    padding: 1.5rem 0 0;
 }
 
 .input-field,
@@ -120,7 +120,7 @@
     .contact {
         @include headersSetupComputer;
         padding-top: 6rem;
-        padding-bottom: 20rem;
+        padding-bottom: 12rem;
 
         h2:hover,
         a:hover {
@@ -152,13 +152,19 @@
         position: relative;
     }
 
+    .email-textarea {
+        .textarea-field {
+            height: 250px;
+        }
+    }
+
 }
 
 @include media-xl-1600 {
     .contact {
         @include headersSetupXXLdevices;
         padding-top: 10rem;
-        padding-bottom: 20rem;
+        padding-bottom: 16rem;
 
         .contact-list {
             font-size: 2rem;

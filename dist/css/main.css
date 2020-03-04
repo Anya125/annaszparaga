@@ -675,6 +675,10 @@ hr {
   padding-top: 1rem;
 }
 
+.CV-section h4 {
+  padding: 0.2rem 0;
+}
+
 .CV-section h5 {
   text-transform: uppercase;
 }
@@ -841,7 +845,7 @@ hr {
 
 .references-section .shadow {
   padding: 2rem;
-  height: 450px;
+  height: 550px;
   background-color: #f1f1f1;
   -webkit-box-shadow: 4px 4px 4px #00000017;
           box-shadow: 4px 4px 4px #00000017;
@@ -881,10 +885,7 @@ hr {
     max-width: 80vw;
   }
   .cvRef-container .workExperience-div h4 {
-    padding-top: 0.5rem;
-  }
-  .cvRef-container .workExperience-div h5 {
-    padding-top: 0.5rem;
+    padding: 0.5rem 0;
   }
   .cvRef-container .skills-section .icons-container {
     display: -ms-grid;
@@ -925,6 +926,9 @@ hr {
   }
   .cvRef-container .workExperience-div {
     max-width: 50vw;
+  }
+  .cvRef-container .workExperience-div h4 {
+    padding: 0.5rem 0;
   }
   .cvRef-container .skills-section .icons-container {
     display: -ms-grid;
@@ -1030,7 +1034,7 @@ hr {
 }
 
 .contactform-input {
-  padding: 1rem 0 0;
+  padding: 1.5rem 0 0;
 }
 
 .input-field,
@@ -1107,7 +1111,7 @@ hr {
 @media screen and (min-width: 1024px) {
   .contact {
     padding-top: 6rem;
-    padding-bottom: 20rem;
+    padding-bottom: 12rem;
   }
   .contact h1 {
     font-size: 2.3rem;
@@ -1153,12 +1157,15 @@ hr {
     margin: 0 auto;
     position: relative;
   }
+  .email-textarea .textarea-field {
+    height: 250px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   .contact {
     padding-top: 10rem;
-    padding-bottom: 20rem;
+    padding-bottom: 16rem;
   }
   .contact h1 {
     font-size: 2.5rem;
