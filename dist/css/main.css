@@ -507,6 +507,7 @@ hr {
 .projects-div .a-btn {
   color: #fff;
   font-size: 2rem;
+  background-color: #60a04c;
 }
 
 @media screen and (min-width: 768px) {
@@ -581,6 +582,7 @@ hr {
   }
   .projects-div .projects-item:hover .a-btn {
     opacity: 1;
+    background-color: transparent;
   }
   .projects-div .a-btn {
     opacity: 0;
