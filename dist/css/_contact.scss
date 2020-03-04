@@ -79,6 +79,12 @@
     font-size: 1.1rem;
 }
 
+.btn-submit:hover {
+    cursor: pointer;
+    background-color: #0c5238;
+    @include transition-ease;
+}
+
 .btn-submit:focus {
     background-color: white;
     color: #0d6b49;
