@@ -88,24 +88,30 @@
       </div>
 
       <div class="contactform-container">
-        <div>
-          <div class="contactform-input">
-            <h4>Name</h4>
-            <input name="name" placeholder="Jane" class="input-field" required>
+        <form action="https://api.annaszparaga.com/send_contact_form" method="POST">
+          <div>
+
+            <div class="contactform-input">
+              <h4>Name</h4>
+              <input name="name" placeholder="Jane" class="input-field" required>
+            </div>
+
+            <div class="contactform-input">
+              <h4>E-mail</h4>
+              <input name="email" placeholder="jane@gmail.com" class="input-field" required>
+            </div>
           </div>
 
-          <div class="contactform-input">
-            <h4>E-mail</h4>
-            <input name="email" placeholder="jane@gmail.com" class="input-field" required>
+          <div class="email-textarea">
+            <textarea name="message" placeholder="Message" rows="5" class="textarea-field"></textarea>
           </div>
+
+          <div class="btn-div">
+            <button id="btn-submit" type="submit" class="btn-submit">Send</button>
+          </div>
+
         </div>
-        <div class="email-textarea">
-          <textarea name="message" placeholder="Message" rows="5" class="textarea-field"></textarea>
-        </div>
-        <div class="btn-div">
-          <button type="submit" class="btn-submit" onclick="">Send</button>
-        </div>
-      </div>
+      </form>
     </div>
   </section>
 
