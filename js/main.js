@@ -1,8 +1,8 @@
 let url = new URL(window.location.href);
 let contactFormSent = url.searchParams.get("contact_form_sent");
-if(contactFormSent) {
+if (contactFormSent) {
   let btnSubmit = document.getElementById("btn-submit");
-  btnSubmit.innerHTML = "Tack för att du kontaktar oss!";
+  btnSubmit.innerHTML = "Thank you for your message!";
 }
 
 // Look for .hamburger
