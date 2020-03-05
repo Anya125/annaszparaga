@@ -1,3 +1,10 @@
+let url = new URL(window.location.href);
+let contactFormSent = url.searchParams.get("contact_form_sent");
+if(contactFormSent) {
+  let btnSubmit = document.getElementById("btn-submit");
+  btnSubmit.innerHTML = "Tack för att du kontaktar oss!";
+}
+
 // Look for .hamburger
 var hamburger = document.querySelector(".hamburger");
 var menu = document.querySelector(".menu-nav");
