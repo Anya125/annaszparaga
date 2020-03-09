@@ -90,6 +90,14 @@
     max-width: 1440px;
 
     .projects-item {
+
+      i:hover,
+      a:hover {
+        color: rgba(0, 0, 0, 0.584);
+        @include transition-ease;
+      }
+
+
       &::after {
         content: "";
         position: absolute;
@@ -115,6 +123,8 @@
           position: absolute;
           top: 49%;
           width: 100%;
+
+
         }
       }
     }
