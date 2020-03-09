@@ -1,7 +1,7 @@
 .contact {
     @include flexCenterColumn;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: $dark-grey;
     overflow: hidden;
     padding: 2rem 2rem 4rem;
@@ -53,6 +53,12 @@
     padding: 1.5rem 0 0;
 }
 
+input,
+button,
+textarea {
+    font-size: 1.1rem;
+}
+
 .input-field,
 .textarea-field,
 .btn-submit {
@@ -76,7 +82,6 @@
 .btn-submit {
     background-color: #0d6b49;
     color: #fff;
-    font-size: 1.1rem;
 }
 
 .btn-submit:hover {
@@ -162,6 +167,12 @@
         .textarea-field {
             height: 250px;
         }
+    }
+
+    input,
+    button,
+    textarea {
+        font-size: 1.1rem;
     }
 
 }

@@ -56,6 +56,7 @@ button,
 input,
 textarea {
   outline: none;
+  font-weight: 300;
 }
 
 button:active,
@@ -678,10 +679,6 @@ hr {
   padding: 0.2rem 0;
 }
 
-.CV-section h5 {
-  text-transform: uppercase;
-}
-
 .CV-section p {
   padding-top: 1rem;
 }
@@ -690,6 +687,14 @@ hr {
   list-style-image: url("../../img/monstera-leaf.png");
   padding-left: 1.5rem;
   padding-top: 1rem;
+}
+
+.CV-section .green-h4 {
+  color: #60a04c;
+}
+
+.CV-section .uppercase-h4 {
+  text-transform: uppercase;
 }
 
 .CV-section .workExperience-div {
@@ -988,7 +993,7 @@ hr {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #464546;
   overflow: hidden;
   padding: 2rem 2rem 4rem;
@@ -1036,6 +1041,12 @@ hr {
   padding: 1.5rem 0 0;
 }
 
+input,
+button,
+textarea {
+  font-size: 1.1rem;
+}
+
 .input-field,
 .textarea-field,
 .btn-submit {
@@ -1059,7 +1070,6 @@ hr {
 .btn-submit {
   background-color: #0d6b49;
   color: #fff;
-  font-size: 1.1rem;
 }
 
 .btn-submit:hover {
@@ -1165,6 +1175,11 @@ hr {
   }
   .email-textarea .textarea-field {
     height: 250px;
+  }
+  input,
+  button,
+  textarea {
+    font-size: 1.1rem;
   }
 }
 

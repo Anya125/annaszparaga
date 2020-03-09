@@ -32,10 +32,6 @@
         padding: 0.2rem 0;
     }
 
-    h5 {
-        text-transform: uppercase;
-    }
-
     p {
         padding-top: 1rem;
     }
@@ -44,6 +40,14 @@
         list-style-image: url("../../img/monstera-leaf.png");
         padding-left: 1.5rem;
         padding-top: 1rem;
+    }
+
+    .green-h4 {
+        color: $secondary;
+    }
+
+    .uppercase-h4 {
+        text-transform: uppercase;
     }
 
     .workExperience-div {
